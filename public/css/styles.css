@@ -1,0 +1,9 @@
+#logo {
+  width: 130px;
+  margin: auto;
+}
+.footerDiv {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

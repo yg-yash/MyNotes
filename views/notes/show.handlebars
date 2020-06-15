@@ -1,0 +1,21 @@
+<div class="container ">
+    {{#each response}}
+
+    <div class="card card-body">
+        <h3>{{title}}<h3>
+                <p>{{body}}</p>
+                <a href="/notes/edit/{{_id}}" class="btn btn-primary btn-block mb-3">Edit</a>
+                <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger btn-block">Delete</button>
+                </form>
+
+
+    </div>
+
+
+    {{else}}
+    <h2>No Notes Found</h2>
+    {{/each}}
+
+</div>

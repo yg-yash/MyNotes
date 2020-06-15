@@ -1,0 +1,28 @@
+{{#each errors}}
+<div class="alert alert-danger my-3">{{text}}</div>
+
+{{else}}
+{{/each}}
+
+
+<div class="row">
+    <div class="col-md-6 mx-auto my-3">
+        <div class="card card-body">
+            <img src="/img/logo.jpg" id="logo">
+            <h3 class="text-center">
+                Account Login
+            </h3>
+            <form action="/user/forgot" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" value="{{email}}" required>
+                </div>
+                <button type="submit" class="btn bg-primary  btn-block">Reset Password</button>
+            </form>
+
+
+
+
+        </div>
+    </div>
+</div>
